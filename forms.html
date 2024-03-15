@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration</h1>
+    <form action="process_registration.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required /> <br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" required /> <br /><br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" id="male" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" required />
+      <label for="female">Female</label> <br /><br />
+
+      <label for="address">Address:</label>
+      <textarea
+        name="address"
+        id="address"
+        rows="5"
+        cols="30"
+        required
+      ></textarea>
+      <br /><br />
+
+      <label for="telephone">Telephone:</label>
+      <input type="tel" name="telephone" id="telephone" required /> <br /><br />
+
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" required /> <br /><br />
+
+      <label for="course">Course:</label>
+      <select name="course" id="course" required>
+        <option value="">Select Course</option>
+        <option value="math">Mathematics</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Register</button>
+      <button type="reset">Cancel</button>
+    </form>
+  </body>
+</html>
